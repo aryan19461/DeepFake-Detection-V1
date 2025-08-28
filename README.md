@@ -37,6 +37,6 @@ Put images under `data/dataset/real/` and `data/dataset/fake/`. Then run `script
 - `GET /health` – status + model loaded
 - `GET /about` – metadata
 
-## Notes
+## TO ACCESS DATASET -->https://drive.google.com/file/d/1QkeiNUkT6JDE97vxQy4dL_Ecdu4nqczO/view?usp=sharing
 - Uses 128×128 preprocessing by default.
 - Mock mode uses simple blur/edge heuristics only for demo — not for real detection.
