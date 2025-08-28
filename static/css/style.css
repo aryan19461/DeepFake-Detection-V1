@@ -1,0 +1,55 @@
+/* Card styling */
+.card{
+  background: linear-gradient(180deg, rgba(30,41,59,1) 0%, rgba(17,24,39,1) 100%);
+  border: 1px solid #334155;
+  border-radius: 1rem;
+  padding: 1rem;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+}
+.card-title{
+  font-size: 1.25rem;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.2px;
+}
+.btn{
+  background: #4f46e5;
+  color: white;
+  border-radius: 0.75rem;
+  padding: 0.6rem 1rem;
+  font-weight: 700;
+  border: 1px solid #4338ca;
+  transition: transform .1s ease, box-shadow .2s ease, filter .2s ease;
+}
+.btn:disabled{
+  filter: grayscale(1) brightness(0.6);
+  cursor: not-allowed;
+}
+.btn:hover{ transform: translateY(-1px); box-shadow: 0 10px 20px rgba(79,70,229,.25); }
+.link{ color: #a5b4fc; text-decoration: underline; }
+
+.dropzone{
+  background: rgba(15,23,42,0.8);
+  border: 2px dashed #475569;
+  border-radius: 1rem;
+  padding: 2rem;
+  text-align: center;
+  transition: border-color .2s ease, background .2s ease;
+}
+.dropzone.dragover{
+  background: rgba(30,41,59,0.8);
+  border-color: #a5b4fc;
+}
+
+.overlay{
+  position: fixed; inset: 0; display: grid; place-items: center; background: rgba(2,6,23,0.7); z-index: 50;
+  color: white; font-weight: 600;
+}
+.spinner, .loader{
+  width: 40px; height: 40px; border-radius: 9999px; border: 4px solid rgba(255,255,255,0.2); border-top-color: white;
+  animation: spin 1s linear infinite;
+}
+.loader{ width: 30px; height: 30px; }
+.hidden{ display: none; }
+
+@keyframes spin{ to { transform: rotate(360deg);} }
