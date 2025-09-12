@@ -24,8 +24,8 @@ pip install -r requirements.txt
 
 python app.py
 ```
-
-Open http://127.0.0.1:5000/
+## To Run the model :
+https://huggingface.co/spaces/Aryan19461/deepfake_RP
 
 ## Dataset
 Put images under `data/dataset/real/` and `data/dataset/fake/`. Then run `scripts/train_keras.py` to create the model file.
